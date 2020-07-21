@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-Jul-2020, 12:35:56 am
+    Author     : jawed
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.chess{
+    height: 710px;
+    width: 716px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px dotted #fff;
+}
+
+.white{
+    background-color: white;
+    height: 87.5px;
+    width: 87.5px;
+    border: none;
+    border-radius: 0px;
+    
+}
+.black{
+    background-color: black;
+    height: 87.5px;
+    width: 87.5px;
+    border: none;
+    border-radius: 0px;
+    
+}
+.black:hover{
+    animation-name: black;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+}
+.white:hover{
+    animation-name: white;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    
+}
+#log{
+    position: fixed;
+    top: 40%;
+    left: 2%;
+}
+#log h2 span{
+    color: #ff022c;
+}
+#log h2{
+    position: relative;
+    margin: 0px;
+    font-size: 40px;
+    color: #fff;
+    width: 0px;
+    font-family: 'Grenze Gotisch', cursive;
+    overflow: hidden;
+    animation-name: text1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.log2{
+    background-color: #cac077;
+    width: 0%;
+    position: fixed;
+    left: 80%;
+    top: 25%;
+    height: 470px;
+    animation-name: container;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.log2 a{
+    text-align: justify;
+    
+}
+.cantent{
+    position: absolute;
+    opacity: 0;
+    margin: 20px;
+    width: 220px;
+    animation-name: img1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+.cantent h3{
+    text-align: center;
+    padding: 5px;
+    color: #0c0b0a;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 2em;
+
+}
+.cantent ul{
+    margin-top: 20px;
+}
+.cantent ul li{
+    padding: 5px; 
+    margin-left: 20px;
+    color: #2a2925;
+}
+.cantent ul li a{
+    text-decoration: none;
+    color: #0c0b0a;
+    
+}
+.cantent ul li a:hover{
+    color: red;
+}
+/*
+keyframes
+*/
+@keyframes white{
+    to{
+        background-color: #ecd525;
+        border-radius: 20px;
+        box-shadow: 60px white;
+        
+    }
+}
+@keyframes black{
+    to{
+        background-color: #ecd525;
+        border-radius: 20px;
+        box-shadow: 60px white;
+        
+    }
+}
+@keyframes text1{
+    to{
+        width:100%;
+    }
+}
+@keyframes container{
+    from{
+        background-color:white;
+    }
+    to{
+        width:250px;
+    }
+    
+}
+@keyframes img1{
+    from{
+        
+    }
+    to{
+        opacity:1;
+    }
+}
